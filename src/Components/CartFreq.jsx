@@ -10,7 +10,7 @@ const ItemFreq = (props) => {
         decrease(ind)
     }
   return (
-    <div className='bg-green-700 text-white px-[8px] boxshadow font-semibold rounded-[5px] py-[1px]  flex items-center gap-3'>
+    <div className='bg-green-500 text-white px-3 boxshadow font-[600] rounded-sm py-1 w-[85px] flex items-center gap-3'>
       <i className='fa-solid fa-minus hover:cursor-pointer' onClick={()=>minus(props.index)}></i>
       <h4>{props.freq}</h4>
       <i className='fa-solid fa-plus hover:cursor-pointer' onClick={()=>plus(props.index)}></i>
