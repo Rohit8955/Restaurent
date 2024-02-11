@@ -2,10 +2,12 @@ import React, { useContext } from 'react'
 import { arr } from './SampleOutput'
 import Button from './Button';
 import NoteContext from '../Context/Notes/NoteContext';
-import {BrowserRouter, Routes, Route, Link,NavLink} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+// import {NavLink} from 'react-router-dom'
 
     
 const Navbar = () => {
+  
   const unique = [...new Set(arr.map((elem,idx)=>{
     return elem.category;
   }))]
@@ -15,6 +17,12 @@ const Navbar = () => {
     const value = e.target.value
     search(value)
     }
+
+    const handleclick = ()=>{
+      navigate('/cart')
+    }
+
+    const navigate = useNavigate();
   return (
 
 <div className='flex justify-evenly items-center mt-8'>
@@ -27,7 +35,7 @@ const Navbar = () => {
         }
       </div>
       
-     <NavLink Link to={"cart"}> <div >
+      <div onClick={handleclick}>
         <div className='bg-blue-800 px-[8px] py-[8px] relative rounded-md flex gap-2 justify-center items-center text-white text-[20px] hover:bg-green-800 hover:cursor-pointer'>
            <i className='fa-solid fa-cart-shopping text-[20px]' ></i>
            <h1 className=''>Cart</h1>
@@ -38,7 +46,6 @@ const Navbar = () => {
         </div>) :null
         }
       </div>
-      </NavLink>
       <input className='border-[2px] border-blue-400 h-[25px] outline-0'  type="text" placeholder='Search Your Food...' onChange={handlechange}/>
     </div>
   )

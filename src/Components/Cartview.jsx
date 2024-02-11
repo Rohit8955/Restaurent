@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Cartitem from './Cartitem'
 import NoteContext from '../Context/Notes/NoteContext'
-import Navbar from './Navbar'
+
 
 const Cartview = () => {
     const {cartarr,freqcount,amount} = useContext(NoteContext)
@@ -18,7 +18,7 @@ const Cartview = () => {
     <div className='w-[750px] h-[350px] flex flex-col gap-3 bg-slate-100 overflow-y-auto scroll boxshadow rounded-md  px-0 py-3'>
       {
         cartarr.map((elem,idx)=>{
-            return <Cartitem name={elem.name} price={elem.price} index={idx} freq={elem.quantity} img={elem.img} />
+            return <Cartitem key={idx} name={elem.name}  price={elem.price} index={idx} freq={elem.quantity} img={elem.img} />
         })
       }
     </div>
