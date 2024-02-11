@@ -64,6 +64,12 @@ const NoteState = ({children})=>{
         // alert("Item Added Successfully")
     }
 
+    const Emptycart = ()=>{
+        setfreqcount(0);
+        setamount(0);
+        setcartarr([]);
+    }
+
     const increase = (index) => {
         setfreqcount(freqcount+1);
         setamount(amount+cartarr[index].price)
@@ -95,7 +101,7 @@ const NoteState = ({children})=>{
         setcartarr(newcartarr)
     }
     return (
-        <NoteContext.Provider value={{ data,datastate,buttonclicked,search,addtocart,cartarr,increase,decrease,freqcount,removefromcart,amount }}>
+        <NoteContext.Provider value={{ data,datastate,buttonclicked,search,addtocart,cartarr,increase,decrease,freqcount,removefromcart,amount,Emptycart }}>
             {children}
         </NoteContext.Provider>
     )
