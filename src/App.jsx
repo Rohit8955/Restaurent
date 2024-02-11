@@ -16,7 +16,7 @@ function App() {
          <Routes>
            <Route path={"/"} element={<Home/>} />
            <Route path={'/cart'} element={<Cartview/>} />
-           <Route path={'/details/:id'} element={<Details/>} />
+           <Route path={'/details/:name'} element={<Details/>} />
          </Routes>
       </BrowserRouter>
     </NoteState>

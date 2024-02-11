@@ -52,10 +52,10 @@ const NoteState = ({children})=>{
         }
     }
 
-    const addtocart = (index) =>{
+    const addtocart = (name) =>{
         setfreqcount(freqcount+1);
-        
-        const obj = data[index];
+        const index = arr.findIndex(item => item.name===name)
+        const obj = arr[index];
         const updateobj = {
             ...obj, quantity:1
         }

@@ -6,8 +6,9 @@ import CartFreq from './CartFreq'
 import Cardtemplate from './Cardtemplate';
 const Details = () => {
     const {data, cartarr, addtocart} = useContext(NoteContext);
-    const {id} = useParams();
-    const obj = data?.[id]
+    const {name} = useParams();
+    const id = arr.findIndex(item => item.name===name);
+    const obj = arr[id]
     const category = obj?.category;
     const objectid = obj.id; 
     console.log(obj)
@@ -32,7 +33,7 @@ const Details = () => {
                     <h4><span className='font-[600] text-[18px]'>Price: </span>Rs. {obj.price}</h4>
                     <div className='flex gap-5'>
                     {
-                        index===-1?( <button className='bg-green-600 text-white px-3 font-[600] py-1 boxshadow rounded-sm hover:bg-green-500' onClick={()=>buttonclicked(id)}>Add to cart</button>)
+                        index===-1?( <button className='bg-green-600 text-white px-3 font-[600] py-1 boxshadow rounded-sm hover:bg-green-500' onClick={()=>buttonclicked(obj.name)}>Add to cart</button>)
                         :(<CartFreq freq={cartarr[index].quantity} index={index}/>)
                     }
                     <button className='bg-blue-600 boxshadow text-white font-[600] rounded-sm py-1 px-4 hover:bg-blue-500'>Order Now</button>
