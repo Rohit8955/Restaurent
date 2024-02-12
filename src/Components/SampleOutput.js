@@ -4,7 +4,7 @@ export const arr = [
         category: "Breakfast",
         name: "Maggie",
         detail: "",
-        img: "./../../src/images/maggi.JPG",
+        img: "./../../public/assets/images/maggi.JPG",
         price: 50
     },
     {
@@ -12,7 +12,7 @@ export const arr = [
         category: "Breakfast",
         name: "Allu Pakoda",
         detail: "",
-        img: "./../../src/images/allupakoida.JPG",
+        img: "./../../public/assets/images/allupakoida.JPG",
         price: 70
     },
     {
@@ -20,7 +20,7 @@ export const arr = [
         category: "Breakfast",
         name: "Momos",
         detail: "",
-        img: "./../../src/images/momo.JPG",
+        img: "./../../public/assets/images/momo.JPG",
         price: 150
     },
     {
@@ -28,7 +28,7 @@ export const arr = [
         category: "Breakfast",
         name: "Non Veg Thali",
         detail: "",
-        img: "./../../src/images/nonvegthali.JPG",
+        img: "./../../public/assets/images/nonvegthali.JPG",
         price: 250
     },
     {
@@ -36,7 +36,7 @@ export const arr = [
         category: "Dinner",
         name: "Pizza",
         detail: "",
-        img: "./../../src/images/pizza.JPG",
+        img: "./../../public/assets/images/pizza.JPG",
         price: 100
     },
     {
@@ -44,7 +44,7 @@ export const arr = [
         category: "Dinner",
         name: "Puri",
         detail: "",
-        img: "./../../src/images/puri.JPG",
+        img: "./../../public/assets/images/puri.JPG",
         price: 90
     },
     {
@@ -52,7 +52,7 @@ export const arr = [
         category: "Lunch",
         name: "Rajma Rice",
         detail: "",
-        img: "./../../src/images/rajmarice.JPG",
+        img: "./../../public/assets/images/rajmarice.JPG",
         price: 150
     },
     {
@@ -60,7 +60,7 @@ export const arr = [
         category: "Lunch",
         name: "Roti with Meat",
         detail: "",
-        img: "./../../src/images/rotiwithmeat.JPG",
+        img: "./../../public/assets/images/rotiwithmeat.JPG",
         price: 350
     },
     {
@@ -68,7 +68,7 @@ export const arr = [
         category: "Dinner",
         name: "Corn",
         detail: "",
-        img: "./../../src/images/corn.JPG",
+        img: "./../../public/assets/images/corn.JPG",
         price: 350
     },
     {
@@ -76,7 +76,7 @@ export const arr = [
         category: "Breakfast",
         name: "Sallaad",
         detail: "",
-        img: "./../../src/images/f1.JPG",
+        img: "./../../public/assets/images/f1.JPG",
         price: 50
     },
     {
@@ -84,7 +84,7 @@ export const arr = [
         category: "Lunch",
         name: "Desert",
         detail: "",
-        img: "./../../src/images/f2.JPG",
+        img: "./../../public/assets/images/f2.JPG",
         price: 20
     },
     {
@@ -92,7 +92,7 @@ export const arr = [
         category: "Lunch",
         name: "Avacado",
         detail: "",
-        img: "./../../src/images/f4.JPG",
+        img: "./../../public/assets/images/f4.JPG",
         price: 250
     },
     {
@@ -100,7 +100,7 @@ export const arr = [
         category: "Dinner",
         name: "Noodles",
         detail: "",
-        img: "./../../src/images/f6.JPG",
+        img: "./../../public/assets/images/f6.JPG",
         price: 300
     },
     {
@@ -108,7 +108,7 @@ export const arr = [
         category: "Lunch",
         name: "Curry",
         detail: "",
-        img: "./../../src/images/f9.JPG",
+        img: "./../../public/assets/images/f9.JPG",
         price: 220
     }
 ]

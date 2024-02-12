@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Cartitem from './Cartitem'
 import NoteContext from '../Context/Notes/NoteContext'
-import noresult from './../../src/images/no-results.png'
+import noresult from './../../public/assets/images/no-results.png'
 const Cartview = () => {
     const {cartarr,freqcount,amount,Emptycart} = useContext(NoteContext)
 
